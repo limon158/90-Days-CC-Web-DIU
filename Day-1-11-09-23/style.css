@@ -1,0 +1,167 @@
+body{
+    max-width: 950px;
+    margin: auto;
+    padding: 0 20px;
+    background-color: white;
+}
+.header{
+    background-image: url("images/campus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-bar{
+    background-color: rgb(12, 141, 70);
+    padding: 18px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 0;
+}
+.nav-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.banner{
+    background-color: rgba(2, 0, 0, 0.726);
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-right: 20px;
+    width: 90px;
+}
+.title{
+    color: rgb(0, 245, 94);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.secondary-title{
+    color: rgb(7, 233, 7);
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.description
+{
+    text-align: center;
+    color: rgb(223, 208, 3);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(202, 21, 148);
+    margin-bottom: 50px;
+}
+.btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.section-title{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.highlight
+{
+    color: rgb(243, 4, 116);
+}
+.section-description{
+    text-transform: uppercase;
+    text-align: justify;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    margin-right: 20px;
+    height: 100%;
+    margin-top: 20px;
+}
+.program-list{
+    width: 100%;
+}
+.program-list p i{
+    margin-right: 10px;
+    color: rebeccapurple;
+}
+.program-list ul{
+    list-style: none;
+}
+.program-list p{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(6, 245, 38, 0.623);
+    border-radius: 5px;
+}
+.mission{
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: rgb(15, 11, 31);
+    height: 40vh;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+#footer-message{
+    text-align: center;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-container{
+    color: rgb(132, 136, 51);
+    text-transform: uppercase;
+    width: 50%;
+    text-align: justify;
+    margin-right: 20px;
+}
+.form-container{
+    color: white;
+}
+.label{
+    font-size: 20px;
+    color: rgb(132, 136, 51);
+    text-transform: uppercase;
+}
+.input{
+    height: 30px;
+    width: 440px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a i{
+    font-size: 35px;
+    margin: 30px 35px 10px 0;
+}
