@@ -151,10 +151,12 @@ body{
     font-size: 20px;
     color: rgb(132, 136, 51);
     text-transform: uppercase;
+
 }
 .input{
     height: 30px;
     width: 440px;
+    margin: 5px 0;
 }
 .social{
     display: flex;
