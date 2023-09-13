@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <h1 class="title">Welcome to our shop!</h1>
+    <form action="">
+        <label for="name">Enter your name
+            <input id="name" type="text" placeholder="Enter your name ">
+        </label>
+        <label for="email">Enter your email
+            <input id="email" type="email" placeholder="Enter your email ">
+        </label>
+        <label for="phone">Enter your phone
+            <input id="phone" type="number" placeholder="Enter your phone ">
+        </label>
+        <fieldset>
+            <legend>Chose any one</legend>
+            <label for="chick-burger">
+                <input type="radio" name="burger" id="chick-burger">
+                Chicken BBQ
+            </label>
+            <label for="beef-burger">
+                <input type="radio" name="burger" id="beef-burger">
+                Beef Burger
+            </label>
+            <label for="spicy-burger">
+                <input type="radio" name="burger" id="spicy-burger">
+                Spicy Chicken Burger
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your fevourite juices</legend>
+            <label for="orange-juice">
+                <input type="checkbox" name="juice" id="orange-juice">
+                Orange Juice
+            </label>
+            <label for="lemon-juice">
+                <input type="checkbox" name="juice" id="lemon-juice">
+                Lemon Juice
+            </label>
+            <label for="apple-juice">
+                <input type="checkbox" name="juice" id="apple-juice">
+                Apple Juice
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea name="instruction" id="instruction-area" cols="30" rows="2" placeholder="Enter your instructions"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
