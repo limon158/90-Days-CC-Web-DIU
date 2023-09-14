@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Semantic tags</title>
+        <style>
+            data:hover::after {
+                content: " (ID " attr(value) ")";
+                font-size: 0.7em;
+            }
+            #num-input:focus{
+                outline: none;
+                color: blue;
+            }
+            button:hover{
+                background-color: red;
+                color: white;
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            incidunt voluptas possimus aut amet nam, optio eaque iste
+            praesentium placeat architecto eius, est aperiam. Ratione accusamus
+            voluptas officia dolore eaque!
+        </p>
+        <aside>
+            <ul>
+                <li>Date</li>
+                <li>Task</li>
+                <li>Description</li>
+            </ul>
+        </aside>
+        <p>My favorite movie is <cite>star wars</cite>.</p>
+        <p>My another favorite movie is <cite>harry potter</cite>.</p>
+
+        <ul>
+            <li><data value="204">Green Tea</data></li>
+            <li><data value="205">Tomato Ketchup</data></li>
+            <li><data value="206">Roasted Coffee Beans</data></li>
+        </ul>
+
+        <details>
+            <summary>What is web?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                molestiae.
+            </p>
+        </details>
+        <!-- <dialog> -->
+        <p>Are you sure?</p>
+        <button>Yes</button>
+        <button>No</button>
+        <!-- </dialog> -->
+        <dl>
+            <dt>Name</dt>
+            <dd>Ahmed</dd>
+            <dt>Name</dt>
+            <dd>Mohammed</dd>
+        </dl>
+        <figure>
+            <img src="discovery (1).jpg" alt="" />
+            <figcaption>Image:Airoplane of year mark</figcaption>
+        </figure>
+        <p>Disk Usage: <meter value="0.8">80%</meter></p>
+        <p>
+            Total Score: <meter value="6" min="0" max="10">6 out of 10</meter>
+        </p>
+        <p>
+            Pollution Level:
+            <meter low="60" high="80" max="100" value="85">Very High</meter>
+        </p>
+        <input type="text" id="num-input">
+        <button>Submit</button>
+        <button value="reset">Reset</button>
+    </body>
+</html>
