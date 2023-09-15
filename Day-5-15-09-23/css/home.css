@@ -5,7 +5,7 @@
     /* Font familly */
     --PT-mono:'PT Mono', monospace;
     /* Colors  */
-    --Body-bg: #17293f;
+    --Body-bg: #09121d;
     --White: #FFFFFF;
     --Black: #000000;
     --Twitter-btn-bg: #2c3b4d;
@@ -25,6 +25,9 @@
 body{
     font-family: var(--PT-mono);
     background: var(--Body-bg);
+    background-image: url('../images/BG\ Stars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .nav-section{
     width: 100%;
