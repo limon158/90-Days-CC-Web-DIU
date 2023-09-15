@@ -1,0 +1,638 @@
+
+
+/* Variables */
+:root{
+    /* Font familly */
+    --PT-mono:'PT Mono', monospace;
+    /* Colors  */
+    --Body-bg: #17293f;
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Twitter-btn-bg: #2c3b4d;
+    --Get-started-btn-bg: #FFD600;
+    --Highlight-text: #FFD600;
+    --Twitter-logo-color: #00ACEE;
+    --Text-hover: rgb(206, 23, 124);
+    --Get-Started-btn-text-color: #10151A;
+    --Plate-background: linear-gradient(123deg, #A96BF7 2.02%, #3103B5 101.68%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--PT-mono);
+    background: var(--Body-bg);
+}
+.nav-section{
+    width: 100%;
+    background: var(--Black);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+}
+#menu-icon{
+    color: var(--White);
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    display: none;
+}
+.nav-section nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    /* background-color: #00ACEE; */
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    width: 60px;
+    height: 35px;
+}
+.nav-logo h3{
+    font-size: 28px;
+    color: var(--White);
+    margin-left: 13px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-style{
+    list-style: none;
+    text-align: center;
+}
+.mobile-menu-style li{
+    width: 50%;
+    margin: 15px auto;
+    padding: 5px 0;
+    background: var(--Twitter-btn-bg);
+}
+.mobile-menu-style li a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+.nav-menu li{
+    list-style: none;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.nav-menu li a{
+    color: var(--White);
+    text-decoration: none;
+
+}
+.nav-menu li a:hover{
+    color: var(--Text-hover);
+}
+.nav-btn{
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: var(--Twitter-btn-bg);
+    border: none;
+}
+.nav-btn:hover{
+    background-color: #17212c;
+}
+.nav-btn i{
+    color: var(--Twitter-logo-color);
+    margin-right: 8px;
+}
+.nav-btn a{
+    text-decoration: none;
+    color: var(--White);
+}
+.main-section{
+    margin-top: 300px;
+}
+.hero-div{
+    width: 70%;
+    margin: auto;
+    /* background: rebeccapurple; */
+}
+.hero-div h1{
+    font-size: 50px;
+    color: var(--White);
+    text-align: center;
+}
+.hero-div p{
+    font-size: 24px;
+    color: var(--White);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.hero-btn-div{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn-div .btn-get-started{
+    background-color: var(--Get-started-btn-bg);
+    border: none;
+    margin: auto;
+    padding: 16px 40px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: var(--Get-Started-btn-text-color);
+}
+.hero-btn-div .btn-get-started:hover{
+    background-color: #e7c100;
+}
+.creators-section{
+    width: 70%;
+    margin: 160px auto;
+    /* background: rebeccapurple; */
+}
+.title-area-1 h2{
+    font-size: 25px;
+    text-align: center;
+    color: var(--White);
+}
+.items{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.items .item{
+    width: 250px;
+}
+.items .item img{
+    margin-top: 10px;
+}
+.items .item h3{
+    color: var(--Highlight-text);
+    margin-top: 10px;
+}
+.items .item p{
+    color: var(--White);
+    margin-top: 10px;
+}
+.item-container{
+    margin-top: 100px;
+    padding: 50px;
+    border: 2px solid var(--Highlight-text);
+    border-radius: 24px;
+}
+.apps{
+    margin: auto;
+    width: 100%;
+}
+.container-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Highlight-text);
+}
+.container-heading img{
+    height: 20px;
+    width: 20px;
+}
+.container-heading h3{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.container-elements{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.container-elements ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container-elements ul li{
+    display: flex;
+    align-items: center;
+    color: var(--White);
+    border-radius: 12px;
+    background: var(--Twitter-btn-bg);
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 8px;
+}
+.container-elements ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    text-align: center;
+    width: 49%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.card h3{
+    color: var(--Highlight-text);
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card p{
+    color: var(--White);
+}
+.plate{
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 24px;
+    width: 70%;
+    background: var(--Plate-background);
+
+}
+.plate .plate-title{
+    color: var(--White);
+    margin-bottom: 10px;
+}
+.plate .plate-description{
+    color: var(--White);
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.plate ul li{
+    color: var(--White);
+    list-style: none;
+    margin-bottom: 10px;
+}
+.plate ul li img{
+    margin-right: 10px;
+    height: 20px;
+    width: 25px;
+}
+.plate button{
+    border: none;
+    border-radius: 16px;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.plate .plate-btn-join{
+    background: var(--Highlight-text);
+    color:var(--Get-Started-btn-text-color);
+}
+.plate .plate-btn-join:hover{
+    background: rgba(223, 202, 19, 0.842);
+}
+.plate .plate-btn-learn{
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--White);
+}
+.plate .plate-btn-learn:hover{
+    background: rgba(255, 255, 255, 0.10);
+}
+.learn-section{
+    width: 70%;
+    margin: 100px auto;
+    /* background: #c09f9f; */
+}
+.learn-section .title-div{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.learn-section .title-div h2{
+    color: var(--White);
+    font-size: 25px;
+}
+.learn-section .learn-section-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.learn-section .learn-section-card{
+    width: 32%;
+    background: var(--Twitter-btn-bg);
+    border-radius: 10px;
+}
+.learn-section .learn-section-cards .learn-section-card .card-display img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.learn-section .learn-section-cards .learn-section-card .card-details{
+    padding: 8px 10px;
+}
+.learn-section .learn-section-cards .learn-section-card .card-details h3{
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   font-size: 15px;
+   color: var(--Highlight-text);
+}
+.learn-section .learn-section-cards .learn-section-card .card-details p{
+    color: var(--White);
+    font-size: 15px;
+    line-height: 20px;
+}
+.backed-section{
+    width: 70%;
+    margin: 100px auto;
+}
+.backed-section .backed-section-header h2{
+    font-size: 25px;
+    color: var(--White);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.backed-section .backed-fund-logo ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.backed-section .backed-fund-logo ul li img{
+    width: 80%;
+}
+.backed-section .backed-partners{
+    margin-top: 30px;
+}
+.backed-section .backed-partners ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.backed-section .backed-partners ul li button{
+    border: 2px solid var(--Twitter-btn-bg);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background: transparent;
+    font-size: 14px;
+    color: var(--White);
+}
+.footer-section{
+    width: 100%;
+    background: var(--Highlight-text);
+    padding: 20px 0;
+}
+.footer-section .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.footer-section .footer-container .footer-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.footer-section .footer-container .footer-menu ul li a{
+    margin-right: 20px;
+    color: var(--Twitter-btn-bg);
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-section .footer-container .footer-menu ul li a:hover{
+    color: var(--Text-hover);
+}
+.footer-section .footer-container .footer-social-links ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.footer-section .footer-container .footer-social-links ul li a{
+    margin-right: 10px;
+    color: var(--Twitter-btn-bg);
+    text-decoration: none;
+}
+
+
+/* Media quary  */
+@media screen and (max-width: 959px) and (min-width: 768px){
+    .nav-section nav{
+        width: 90%;
+    }
+    .nav-menu li{
+        margin-left: 30px;
+    }
+    .hero-div{
+        width: 80%;
+        margin: auto;
+        /* background: rebeccapurple; */
+    }
+    .hero-div h1{
+        font-size: 45px;
+    }
+    .hero-div p{
+        font-size: 20px;
+    }
+    .item-container{
+        padding: 40px;
+    }
+    .container-elements ul li{
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+    .container-elements ul li img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .nav-section{
+        padding: 20px 0;
+        margin-bottom: 50px;
+        position: fixed;
+    }
+    .nav-section nav{
+        display: block;
+        width: 90%;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        border: none;
+        background: black;
+    }
+    .nav-logo{
+        margin-bottom: 15px;
+    }
+    .nav-logo img{
+        width: 30px;
+        height: 16px;
+    }
+    .nav-logo h3{
+        font-size: 20px;
+    }
+    .nav-menu{
+        display: none;
+        text-align: center;
+    }
+    #btn-tweet{
+        display: none;
+    }
+    .nav-menu li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .hero-div{
+        width: 90%;
+    }
+    .hero-div h1{
+        font-size: 30px;
+    }
+    .hero-div p{
+        font-size: 15px;
+    }
+    .hero-btn-div .btn-get-started{
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .creators-section{
+        margin: 100px auto;
+        width: 90%;
+    }
+    .title-area-1 h2{
+        font-size: 20px;
+    }
+    .items{
+        margin-top: 20px;
+    }
+    .items .item{
+        width: 190px;
+    }
+    .items .item img{
+        height: 10px;
+    }
+    .items .item h3{
+        font-size: 12px;
+    }
+    .items .item p{
+        font-size: 10px;
+    }
+    .item-container{
+        padding: 20px;
+    }
+    .container-heading img{
+        height: 14px;
+        width: 14px;
+    }
+    .container-heading h3{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .container-elements ul li{
+        font-size: 10px;
+        padding: 5px 12px;
+        margin: 5px;
+    }
+    .container-elements ul li img{
+        width: 20px;
+        height: 20px;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .plate{
+        margin: 80px auto;
+        padding: 40px 30px;
+        border-radius: 24px;
+        width: 90%;
+    }
+    .plate .plate-description{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .plate ul li{
+        font-size: 15px;
+    }
+    .plate ul li img{
+        height: 15px;
+        width: 20px;
+    }
+    .plate button{
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .learn-section{
+        width: 90%;
+    }
+    .learn-section .title-div{
+        margin-bottom: 40px;
+    }
+    .learn-section .title-div h2{
+        font-size: 20px;
+    }
+    .learn-section .learn-section-cards{
+        width: 100%;
+        display: block;
+    }
+    .learn-section .learn-section-card{
+        width: 60%;
+        margin: 20px auto;
+    }
+    .learn-section .learn-section-cards .learn-section-card .card-details h3{
+        font-size: 12px;
+     }
+     .learn-section .learn-section-cards .learn-section-card .card-details p{
+         font-size: 12px;
+         line-height: 15px;
+     }
+     .backed-section{
+        width:90%;
+        margin: 80px auto;
+    }
+    .backed-section .backed-section-header h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .backed-section .backed-partners ul li button{
+        padding: 5px 10px;
+        border-radius: 15px;
+        margin-right: 8px;
+        font-size: 10px;
+    }
+    .footer-section .footer-container{
+        width: 90%;
+    }
+    .footer-section .footer-container .footer-logo img{
+        width: 40px;
+    }
+    .footer-section .footer-container .footer-menu ul li a{
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .footer-section .footer-container .footer-social-links ul li a img{
+        width: 20px;
+    }
+}
