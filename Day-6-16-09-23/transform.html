@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container, .inner{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            background-color: rgb(138, 34, 185);
+            margin-top: 20px;
+        }
+        .inner{
+            background-color: rgb(201, 16, 176);
+            transform: scale(0.5) rotate(45deg) translate(50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box container">
+        <div class="inner">Box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">Box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">Box-3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes jumping {
+            0%{
+                background: red;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background: rgb(3, 35, 173);
+                top: 250px;
+                left: 100px;
+            }
+            50%{
+                background: rgb(3, 216, 231);
+                top: 0;
+                left: 250px;
+            }
+            75%{
+                background: rgb(234, 250, 4);
+                top: 250px;
+                left: 400px;
+
+            }
+            100%{
+                background: rgb(38, 212, 3);
+                left: 550px;
+                top: 0;
+            }
+        }
+        @keyframes jumping2 {
+            0%{
+                background: rgb(241, 237, 2);
+                top: 200px;
+                left: 100px;
+
+                /* background: red;
+                left: 0;
+                top: -50px; */
+            }
+            25%{
+                background: red;
+                left: 0;
+                top: -50px;
+                /* background: rgb(241, 237, 2);
+                top: 200px;
+                left: 100px; */
+            }
+            50%{
+                background: rgb(5, 223, 34);
+                top: 200px;
+                left: 400px;
+                /* background: rgb(236, 3, 197);
+                top: -50px;
+                left: 250px; */
+            }
+            75%{
+                background: rgb(236, 3, 197);
+                top: -50px;
+                left: 250px;
+
+                /* background: rgb(5, 223, 34);
+                top: 200px;
+                left: 400px; */
+
+            }
+            100%{
+                background: rgb(212, 3, 3);
+                left: 550px;
+                top: 200px;
+            }
+        }
+    
+        .stage{
+            height: 300px;
+            width: 600px;
+            border: 3px solid rebeccapurple;
+            background: rgb(245, 255, 209);
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(209, 3, 147);
+            position: relative;
+            animation: jumping 3s ease-in-out 0.2s infinite alternate;
+            animation-play-state: running;
+        }
+        .ball-2{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(209, 3, 147);
+            position: relative;
+            animation: jumping2 3s ease-in-out 0.2s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+        <div class="ball-2"></div>
+    </div>
+    
+</body>
+</html>
