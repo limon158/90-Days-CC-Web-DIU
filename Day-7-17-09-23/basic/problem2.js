@@ -1,0 +1,21 @@
+//Avarage result of xyz
+var totalSub = 5;
+totalSub = parseFloat(totalSub);
+var bangla = 75.25;
+var english = 65;
+english = parseFloat(english);
+var math = 80;
+math = parseFloat(math);
+var physics = 35.45;
+var chemistry = 99.50;
+var totalMark = (bangla+english+math+physics+chemistry);
+var avaragMark = (totalMark/totalSub);
+avaragMark =  avaragMark.toFixed(2);
+console.log("\nAvarage result of XYZ\n________________________\n\n");
+console.log("Bangla :", bangla);
+console.log("English :", english);
+console.log("Math :", math);
+console.log("Physics :", physics);
+console.log("Chemistry :", chemistry);
+console.log("\n");
+console.log("Avarage mark", avaragMark);

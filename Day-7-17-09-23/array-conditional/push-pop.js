@@ -1,0 +1,10 @@
+var numbers = [43, 34, 88, 45];
+var names = ['kala'];
+numbers.push(44);
+names.push('sada');
+console.log(numbers);
+// numbers.pop();
+var lastElement = numbers.pop();
+console.log(numbers);
+console.log(lastElement);
+console.log(names);
